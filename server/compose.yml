@@ -7,14 +7,3 @@ services:
     volumes:
       - ./data:/server
     restart: unless-stopped
-
-  reverse-proxy:
-    image: nginx:1.27-alpine
-    container_name: eaglercraft-proxy
-    depends_on:
-      - eaglercraft
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d:ro
-    restart: unless-stopped
