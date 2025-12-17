@@ -3,8 +3,7 @@ services:
     build: .
     container_name: eaglercraft-paper
     ports:
-      - "25565:25565" # Java + Eaglercraft websocket
-      - "8081:8081" # optional extra listener/http if enabled
+      - "25565:25565"
     volumes:
       - ./data:/server
     restart: unless-stopped
