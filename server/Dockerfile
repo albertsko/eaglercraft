@@ -4,7 +4,7 @@ ENV SERVER_HOME=/server
 
 WORKDIR /opt/eagler/base
 
-COPY base/* /opt/eagler/base/
+COPY base/ /opt/eagler/base/
 
 COPY entrypoint.sh /opt/eagler/entrypoint.sh
 RUN chmod +x /opt/eagler/entrypoint.sh
