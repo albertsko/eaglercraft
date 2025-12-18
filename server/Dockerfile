@@ -14,7 +14,7 @@ COPY entrypoint.sh /opt/eagler/entrypoint.sh
 RUN chmod +x /opt/eagler/entrypoint.sh
 
 VOLUME ["/server"]
-EXPOSE 25565
+EXPOSE 25565 8081
 
 WORKDIR /server
 ENTRYPOINT ["/opt/eagler/entrypoint.sh"]
